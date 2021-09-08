@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* _____ -------- _______ ------- _______ */
+
+.padd-card{
+    padding: 10px;
+    margin: 15px;
+    background-color: rgb(56, 55, 63);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 20px;
+}
+.para-text{
+    font-size: 16px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 0.5px;
+    text-align: center;
+    color: rgb(182, 182, 182);
+}
+
+.title-heading{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    font-size: 32px;
+    color: rgb(212, 217, 255);
+}
+
+
+.btn-sub{
+    background-color: rgba(65, 167, 40, 0.933);
+    color: rgb(232, 232, 232);
+    padding: 8px 20px;
+    outline: none;
+    border: none;
+
+}
+
+.result-img{
+    box-shadow: 9px 12px 5px -7px rgba(156,156,164,0.14);
+    -webkit-box-shadow: 9px 12px 4px -7px rgba(156,156,164,0.14);
+    -moz-box-shadow: 9px 12px 5px -7px rgba(156,156,164,0.14);
+
+}
+
+.sub-container{
+    text-align: center;
+    padding: 20px;
+}
+.main-contain{
+    padding: 20px;
+}
+.margin-out{
+    margin: 0px 100px;
+}
+
+.container-style{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(85, 88, 99);
+}
+.col-style{
+   
+    border-radius: 20px;
+    text-align: center;
+}
+.form-class{
+  margin-top: 20px;
+}
+button {
+  margin: 20px;
+  outline: none;
+}
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 10px 25px;
+  border: 2px solid #000;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+.btn-7 {
+   background: #fff;
+  color: #000;
+  line-height: 42px;
+  padding: 0;
+  border: none;
+  z-index: 1;
+   -webkit-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+.btn-7:hover {
+  background: #000;
+  color: #fff;
+}
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  width: 100%;
+  height: 50%;
+  right: 0;
+  z-index: -1;
+  background: #fff;
+  transition: all 0.3s ease;
+}
+.btn-7:before {
+  top: 0;
+}
+.btn-7:after {
+  bottom: 0;
+}
+.btn-7:hover:before,
+.btn-7:hover:after {
+  height: 0;
+  background-color: #fff;
+}

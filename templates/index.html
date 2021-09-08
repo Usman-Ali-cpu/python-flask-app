@@ -1,0 +1,40 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/home.css') }}">
+</head>
+
+<body>
+    <div class="container container-style">
+        <div class="col col-style">
+            <div class="card padd-card"
+                style="width: 40rem; height: 40rem; background-color: rgb(56, 55, 63); border: none;">
+                {% if img_produce %}
+                <img src="{{img_produce}}" class="card-img-top result-img" alt="...">
+                {%endif%}
+                <div class="card-body">
+                    <h5 class="card-title title-heading">RENDERING IMAGE</h5>
+                    <p class="card-text para-text">
+                        Image Exported by Script
+                    </p>
+                    <form action="/result" method="POST" class="form-class">
+                        <button class="custom-btn btn-7" type="submit">Run Script</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+</body>
+
+</html>
